@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JermaineVault Mission Control</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="dashboard-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Performance Intelligence</p>
+          <h1>JermaineVault Mission Control</h1>
+          <p class="subtitle">Live delivery telemetry for distributed engineering teams.</p>
+        </div>
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Realtime stream active</span>
+        </div>
+      </header>
+
+      <section class="kpi-grid" id="kpiGrid"></section>
+
+      <section class="insight-grid">
+        <article class="panel chart-panel">
+          <h2>Throughput Pulse</h2>
+          <div class="bars" id="bars"></div>
+        </article>
+
+        <article class="panel feed-panel">
+          <h2>Live Activity Feed</h2>
+          <ul id="feed"></ul>
+        </article>
+      </section>
+
+      <footer class="demo-footer">
+        <p>For demo purposes only</p>
+        <a href="https://github.com/jermainewright/JermaineVault" target="_blank" rel="noopener noreferrer">
+          View Source Code
+        </a>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
